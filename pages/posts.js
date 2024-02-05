@@ -1,14 +1,13 @@
 import Layout from "@components/Layout";
 import CardPost from "@components/CardPost";
 import Container from "@components/Container";
-import mockPosts from "../utils/posts";
+
 import { useEffect, useState } from "react";
 import SectionHeader from "@components/SectionHeader";
 import Head from "next/head";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "config/firebase";
 export default function Posts() {
-  const [posts, setPosts] = useState(mockPosts);
   const [postsList, setPostsList] = useState([]);
   const postsCollectionRef = collection(db, "posts");
   const getPostsList = async () => {

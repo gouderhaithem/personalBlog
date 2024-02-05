@@ -5,13 +5,13 @@ import FeaturePost from "@components/FeaturedPost";
 import CardPost from "@components/CardPost";
 import Container from "@components/Container";
 import Layout from "@components/Layout";
-import mockPosts from "../utils/posts.json";
+
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "config/firebase";
 
 export default function Home() {
   const [postsList, setPostsList] = useState([]);
-  const [posts, setPosts] = useState(mockPosts);
+
   const postsCollectionRef = collection(db, "posts");
   const getPostsList = async () => {
     try {
