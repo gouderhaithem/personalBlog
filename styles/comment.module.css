@@ -1,0 +1,70 @@
+/* comments */
+.typingTextarea {
+  border: 1px solid #444654;
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.typingTextarea2 {
+  resize: none;
+  height: 55px;
+  width: 100%;
+  border: none;
+  padding: 15px 45px 15px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  max-height: 250px;
+  overflow-y: auto;
+  background: var(--incoming-chat-bg);
+  outline: none;
+  /* outline: 1px solid #444654; */
+}
+
+ .span1 {
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  border-radius: 4px;
+  font-size: 1.35rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+}
+
+.commentcontainer {
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+ .commentcontainer:hover {
+  background-color: rgb(222, 222, 255);
+  transition: all 0.5s ease;
+}
+
+.singlecomment {
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+}
+
+ .img2 {
+  flex: 2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.deleteIcon {
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
